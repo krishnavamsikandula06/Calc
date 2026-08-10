@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calc — Simple Python Calculator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input id="expr" placeholder="Enter expression, e.g. 2*(3+4)" autofocus />
+      </div>
+      <div class="controls">
+        <button data-insert="7">7</button>
+        <button data-insert="8">8</button>
+        <button data-insert="9">9</button>
+        <button data-insert="/">/</button>
+
+        <button data-insert="4">4</button>
+        <button data-insert="5">5</button>
+        <button data-insert="6">6</button>
+        <button data-insert="*">*</button>
+
+        <button data-insert="1">1</button>
+        <button data-insert="2">2</button>
+        <button data-insert="3">3</button>
+        <button data-insert="-">-</button>
+
+        <button data-insert="0">0</button>
+        <button data-insert=".">.</button>
+        <button id="eval">=</button>
+        <button data-insert="+">+</button>
+
+        <button data-insert="(">(</button>
+        <button data-insert=")">)</button>
+        <button id="clear">C</button>
+        <button id="back">←</button>
+      </div>
+
+      <div class="result" id="result"></div>
+      <div class="history" id="history"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
